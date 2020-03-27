@@ -890,6 +890,472 @@
           "flag": "step_end"
         }
       ]
+    },
+    {
+      "commit": "4aa30d320eafee6d3f9a7e747257df9148598508",
+      "id": "Dahstc1dbW",
+      "articleId": "bd4e1cd77af2084c9384471a2f55819b",
+      "type": "step",
+      "children": [
+        {
+          "type": "heading-two",
+          "commit": "4aa30d320eafee6d3f9a7e747257df9148598508",
+          "id": "xoAhdv2tf0",
+          "fixed": true,
+          "children": [
+            {
+              "text": "改善博客的首页界面"
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "我们之前初始化的博客有一点简单，现在我们需要让他的首页变得更精致一点，所以我们加了一点图片，然后修改了文案，并基于文案和图片加了对应的样式。"
+                }
+              ]
+            }
+          ],
+          "flag": "step_start"
+        },
+        {
+          "type": "file",
+          "file": ".gitignore",
+          "display": false,
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": ".gitignore",
+              "commit": "4aa30d320eafee6d3f9a7e747257df9148598508",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "public/images/bg.svg",
+          "display": false,
+          "commit": "4aa30d320eafee6d3f9a7e747257df9148598508",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_start"
+            },
+            {
+              "type": "diff-block",
+              "file": "public/images/bg.svg",
+              "commit": "4aa30d320eafee6d3f9a7e747257df9148598508",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_end"
+            }
+          ]
+        },
+        {
+          "file": "public/images/logo.svg",
+          "display": false,
+          "commit": "4aa30d320eafee6d3f9a7e747257df9148598508",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_start"
+            },
+            {
+              "type": "diff-block",
+              "file": "public/images/logo.svg",
+              "commit": "4aa30d320eafee6d3f9a7e747257df9148598508",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_end"
+            }
+          ]
+        },
+        {
+          "file": "routes/index.js",
+          "display": true,
+          "commit": "4aa30d320eafee6d3f9a7e747257df9148598508",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "改变传递数据"
+                    }
+                  ],
+                  "id": "J3F9o4808"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先我们在路由函数里面修改一下传递的 "
+                    },
+                    {
+                      "text": "title",
+                      "code": true
+                    },
+                    {
+                      "text": " 文案："
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_start"
+            },
+            {
+              "type": "diff-block",
+              "file": "routes/index.js",
+              "commit": "4aa30d320eafee6d3f9a7e747257df9148598508",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "可以看到我们把 "
+                    },
+                    {
+                      "text": "title",
+                      "code": true
+                    },
+                    {
+                      "text": " 文案改成了 "
+                    },
+                    {
+                      "text": "\"图雀\"",
+                      "code": true
+                    },
+                    {
+                      "text": " 。"
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_end"
+            }
+          ]
+        },
+        {
+          "file": "views/index.jade",
+          "display": true,
+          "commit": "4aa30d320eafee6d3f9a7e747257df9148598508",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "修改模板"
+                    }
+                  ],
+                  "id": "dpiKVCZ3L"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "接着我们来对模板做一点改变，Express 脚手架默认初始化用的模板引擎为"
+                    },
+                    {
+                      "text": "jade",
+                      "link": true,
+                      "url": "https://segmentfault.com/a/1190000000357534"
+                    },
+                    {
+                      "text": " ，我们打算添加一点摘要改变，然后加入一些图片来让首页变得好看一点："
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_start"
+            },
+            {
+              "type": "diff-block",
+              "file": "views/index.jade",
+              "commit": "4aa30d320eafee6d3f9a7e747257df9148598508",
+              "hiddenLines": [
+                [
+                  0,
+                  0
+                ]
+              ],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "可以看到，上面我们将 "
+                    },
+                    {
+                      "text": "p",
+                      "code": true
+                    },
+                    {
+                      "text": " 标签辅助文字改成了 “予力内容创作，加速技术传播”，然后添加了七张图片。"
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_end"
+            }
+          ]
+        },
+        {
+          "file": "public/stylesheets/style.css",
+          "display": true,
+          "commit": "4aa30d320eafee6d3f9a7e747257df9148598508",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "修改样式"
+                    }
+                  ],
+                  "id": "nmrMgCc86"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "最后给模板的内容添加一点样式，让整体更美观："
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_start"
+            },
+            {
+              "type": "diff-block",
+              "file": "public/stylesheets/style.css",
+              "commit": "4aa30d320eafee6d3f9a7e747257df9148598508",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "可以看到我们改变了 "
+                    },
+                    {
+                      "text": "h1",
+                      "code": true
+                    },
+                    {
+                      "text": " 和 "
+                    },
+                    {
+                      "text": "p",
+                      "code": true
+                    },
+                    {
+                      "text": " 标签的样式，然后给图片给了一定样式，最后我们将整个 "
+                    },
+                    {
+                      "text": "body",
+                      "code": true
+                    },
+                    {
+                      "text": "  的背景变成了图雀绿 "
+                    },
+                    {
+                      "text": "#02b875",
+                      "code": true
+                    },
+                    {
+                      "text": " 。"
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_end"
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "好的，我们第二步优化博客的首页界面的内容就讲到这里啦，希望你玩得开心！✌️"
+                }
+              ]
+            }
+          ],
+          "flag": "step_end"
+        }
+      ]
     }
   ],
   "version": "v1",
