@@ -1,0 +1,905 @@
+{
+  "name": "用 Express 搭建公司博客",
+  "description": "",
+  "id": "bd4e1cd77af2084c9384471a2f55819b",
+  "created": "2020-03-25T08:11:54.340Z",
+  "articles": [
+    {
+      "name": "用 Express 搭建公司博客",
+      "description": "",
+      "id": "bd4e1cd77af2084c9384471a2f55819b"
+    }
+  ],
+  "steps": [
+    {
+      "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+      "id": "Uz1iE5wCh",
+      "articleId": "bd4e1cd77af2084c9384471a2f55819b",
+      "type": "step",
+      "children": [
+        {
+          "type": "heading-two",
+          "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+          "id": "c9ybnK39F4",
+          "fixed": true,
+          "children": [
+            {
+              "text": "初始化 Express 博客"
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "很多公司都有搭建自己的技术博客的需求，那么灵活度高的搭建技术博客的技术中 Express 可以排的上名头了，所以我们公司选用了 Express 来搭建我们的技术博客。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "首先我们安装 "
+                },
+                {
+                  "text": "Node.js",
+                  "link": true,
+                  "url": "https://nodejs.org"
+                },
+                {
+                  "text": " ，然后我们通过运行如下命令检测命令是否安装成功："
+                }
+              ]
+            },
+            {
+              "type": "code-block",
+              "lang": "bash",
+              "children": [
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "node -v # v12.16.1"
+                    }
+                  ]
+                },
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "npm -v # 6.13.4"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "上面的命令运行成功之后，我们就成功初始化了环境，接着我们允许如下命令来初始化这个博客："
+                }
+              ]
+            },
+            {
+              "type": "code-block",
+              "lang": "bash",
+              "children": [
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "npx express-generator our-tuture"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "运行上面的命令之后，Express 的脚手架会自动创建一个简单的 Express 项目，然后运行如下命令开启一下创建好的 Express 项目："
+                }
+              ]
+            },
+            {
+              "type": "code-block",
+              "lang": "bash",
+              "children": [
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "cd our-tuture && npm install"
+                    }
+                  ]
+                },
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "npm start"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "接着打开浏览器 "
+                },
+                {
+                  "text": "http://localhost:3000/",
+                  "link": true,
+                  "url": "http://localhost:3000/"
+                },
+                {
+                  "text": "，应该可以看到如下界面："
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": ".tuture/assets/image.png",
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "恭喜你，成功搭建起公司博客的原型，接下来我们来讲解一下具体的代码。"
+                }
+              ]
+            }
+          ],
+          "flag": "step_start"
+        },
+        {
+          "type": "file",
+          "file": ".gitignore",
+          "display": false,
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": ".gitignore",
+              "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "app.js",
+          "display": false,
+          "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_start"
+            },
+            {
+              "type": "diff-block",
+              "file": "app.js",
+              "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_end"
+            }
+          ]
+        },
+        {
+          "file": "bin/www",
+          "display": false,
+          "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_start"
+            },
+            {
+              "type": "diff-block",
+              "file": "bin/www",
+              "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_end"
+            }
+          ]
+        },
+        {
+          "file": "package.json",
+          "display": false,
+          "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_start"
+            },
+            {
+              "type": "diff-block",
+              "file": "package.json",
+              "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_end"
+            }
+          ]
+        },
+        {
+          "file": "public/stylesheets/style.css",
+          "display": false,
+          "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_start"
+            },
+            {
+              "type": "diff-block",
+              "file": "public/stylesheets/style.css",
+              "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_end"
+            }
+          ]
+        },
+        {
+          "file": "routes/index.js",
+          "display": true,
+          "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "了解初始化代码"
+                    }
+                  ],
+                  "id": "SGrkcJ-2T"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "我们先来看一下项目根目录的 "
+                    },
+                    {
+                      "text": "routes/index.js",
+                      "code": true
+                    },
+                    {
+                      "text": " 文件，它里面只要是 Express 路由，用于在用户访问 "
+                    },
+                    {
+                      "text": "http://localhost:3000/",
+                      "link": true,
+                      "url": "http://localhost:3000/"
+                    },
+                    {
+                      "text": "   是返回给用户对应的渲染模板，我们来看一下它的代码："
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_start"
+            },
+            {
+              "type": "diff-block",
+              "file": "routes/index.js",
+              "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "我们可以看到，上面的代码主要就是导入了 "
+                    },
+                    {
+                      "text": "express",
+                      "code": true
+                    },
+                    {
+                      "text": " 包，然后初始化一个路由，接着通过路由的 "
+                    },
+                    {
+                      "text": "get",
+                      "code": true
+                    },
+                    {
+                      "text": " 函数监听 "
+                    },
+                    {
+                      "text": "/",
+                      "code": true
+                    },
+                    {
+                      "text": " 路径，接着返回渲染好的 "
+                    },
+                    {
+                      "text": "index",
+                      "code": true
+                    },
+                    {
+                      "text": " 模板，最后使用 "
+                    },
+                    {
+                      "text": "module.exports",
+                      "code": true
+                    },
+                    {
+                      "text": " 导出这个路由。"
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_end"
+            }
+          ]
+        },
+        {
+          "file": "routes/users.js",
+          "display": false,
+          "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_start"
+            },
+            {
+              "type": "diff-block",
+              "file": "routes/users.js",
+              "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_end"
+            }
+          ]
+        },
+        {
+          "file": "views/error.jade",
+          "display": false,
+          "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_start"
+            },
+            {
+              "type": "diff-block",
+              "file": "views/error.jade",
+              "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_end"
+            }
+          ]
+        },
+        {
+          "file": "views/index.jade",
+          "display": false,
+          "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_start"
+            },
+            {
+              "type": "diff-block",
+              "file": "views/index.jade",
+              "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_end"
+            }
+          ]
+        },
+        {
+          "file": "views/layout.jade",
+          "display": false,
+          "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_start"
+            },
+            {
+              "type": "diff-block",
+              "file": "views/layout.jade",
+              "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_end"
+            }
+          ]
+        },
+        {
+          "file": "yarn.lock",
+          "display": false,
+          "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_start"
+            },
+            {
+              "type": "diff-block",
+              "file": "yarn.lock",
+              "commit": "7c0fcad0b2ab3a029cb86ee842672d7ad4558ed5",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "flag": "file_end"
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "好的，我们初始化 Express 项目就在这里，我们再来回顾一下刚刚做了什么事情："
+                }
+              ]
+            },
+            {
+              "type": "bulleted-list",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "首先我们安装了 Node.js，然后测试了其安装状态"
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "然后我们使用使用 "
+                    },
+                    {
+                      "text": "npx",
+                      "code": true
+                    },
+                    {
+                      "text": " 命令执行了 Express 脚手架然后初始化了一个 Express 项目，这就是我们这次要搭建的这个公司博客的原型"
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "最后我们集中讲解了每个文件创建的含义以及代码的内容"
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "我们的使用 Express 搭建公司博客之初始化项目就到这里了✌️，希望能帮助到你"
+                }
+              ]
+            }
+          ],
+          "flag": "step_end"
+        }
+      ]
+    }
+  ],
+  "version": "v1",
+  "remotes": [
+    {
+      "name": "origin",
+      "refs": {
+        "fetch": "git@github.com:tuture-dev/our-tuture.git",
+        "push": "git@github.com:tuture-dev/our-tuture.git"
+      }
+    }
+  ]
+}
