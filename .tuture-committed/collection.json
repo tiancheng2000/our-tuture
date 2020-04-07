@@ -36,7 +36,7 @@
               "type": "paragraph",
               "children": [
                 {
-                  "text": "很多公司都有搭建自己的技术博客的需求，那么灵活度高的搭建技术博客的技术中 Express 可以排的上名头了，所以我们公司选用了 Express 来搭建我们的技术博客。"
+                  "text": "很多公司都有搭建自己的技术博客的需求，那么灵活度高的搭建技术博客的技术中 Express 可以排的上名头了，所以我们公司选用了 Express 来搭建我们的技术博客。hello world"
                 }
               ]
             },
@@ -171,8 +171,7 @@
                 }
               ]
             }
-          ],
-          "flag": "step_start"
+          ]
         },
         {
           "type": "file",
@@ -483,8 +482,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -549,8 +547,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -886,8 +883,7 @@
                 }
               ]
             }
-          ],
-          "flag": "step_end"
+          ]
         }
       ]
     },
@@ -920,8 +916,7 @@
                 }
               ]
             }
-          ],
-          "flag": "step_start"
+          ]
         },
         {
           "type": "file",
@@ -1116,8 +1111,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -1161,8 +1155,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -1201,8 +1194,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -1244,8 +1236,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -1276,8 +1267,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -1335,8 +1325,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -1352,8 +1341,7 @@
                 }
               ]
             }
-          ],
-          "flag": "step_end"
+          ]
         }
       ]
     }
